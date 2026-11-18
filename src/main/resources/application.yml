@@ -1,6 +1,13 @@
 spring:
   application:
     name: zhang-ai-code-zero-backend
+    #mysql
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/zhang_ai_code_zero
+    username: root
+    password: 245203
+
 server:
   port: 8123
   servlet:
@@ -9,6 +16,7 @@ server:
 springdoc:
   group-configs:
     - group: 'default'
+      paths-to-match: '/**'
       packages-to-scan: com.xiaozhang.aicodezero.controller
 knife4j:
   enable: true
