@@ -10,7 +10,7 @@ import com.xiaozhang.aicodezero.constant.UserConstant;
 import com.xiaozhang.aicodezero.exception.BusinessException;
 import com.xiaozhang.aicodezero.exception.ErrorCode;
 import com.xiaozhang.aicodezero.exception.ThrowUtils;
-import com.xiaozhang.aicodezero.model.dto.*;
+import com.xiaozhang.aicodezero.model.dto.user.*;
 import com.xiaozhang.aicodezero.model.entity.User;
 import com.xiaozhang.aicodezero.model.vo.LoginUserVO;
 import com.xiaozhang.aicodezero.model.vo.UserVO;

@@ -8,7 +8,7 @@ import com.mybatisflex.spring.service.impl.ServiceImpl;
 import com.xiaozhang.aicodezero.exception.BusinessException;
 import com.xiaozhang.aicodezero.exception.ErrorCode;
 import com.xiaozhang.aicodezero.mapper.UserMapper;
-import com.xiaozhang.aicodezero.model.dto.UserQueryRequest;
+import com.xiaozhang.aicodezero.model.dto.user.UserQueryRequest;
 import com.xiaozhang.aicodezero.model.entity.User;
 import com.xiaozhang.aicodezero.model.enums.UserRoleEnum;
 import com.xiaozhang.aicodezero.model.vo.LoginUserVO;

@@ -1,4 +1,4 @@
-package com.xiaozhang.aicodezero.model.dto;
+package com.xiaozhang.aicodezero.model.dto.user;
 
 import lombok.Data;
 
