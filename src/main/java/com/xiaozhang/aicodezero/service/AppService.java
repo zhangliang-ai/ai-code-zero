@@ -2,10 +2,12 @@ package com.xiaozhang.aicodezero.service;
 
 import com.mybatisflex.core.query.QueryWrapper;
 import com.mybatisflex.core.service.IService;
+
 import com.xiaozhang.aicodezero.model.dto.app.AppQueryRequest;
 import com.xiaozhang.aicodezero.model.entity.App;
+import com.xiaozhang.aicodezero.model.entity.User;
 import com.xiaozhang.aicodezero.model.vo.AppVO;
-
+import reactor.core.publisher.Flux;
 
 import java.util.List;
 
@@ -15,6 +17,16 @@ import java.util.List;
  * @author <a href="https://github.com/liyupi">程序员鱼皮</a>
  */
 public interface AppService extends IService<App> {
+
+    /**
+     * 通过对话生成应用代码
+     *
+     * @param appId 应用 ID
+     * @param message 提示词
+     * @param loginUser 登录用户
+     * @return
+     */
+    Flux<String> chatToGenCode(Long appId, String message, User loginUser);
 
     /**
      * 获取应用封装类
