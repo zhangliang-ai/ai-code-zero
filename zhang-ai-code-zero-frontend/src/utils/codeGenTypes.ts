@@ -4,6 +4,7 @@
 export enum CodeGenTypeEnum {
   HTML = 'html',
   MULTI_FILE = 'multi_file',
+  VUE_PROJECT = 'vue_project',
 }
 
 /**
@@ -36,6 +37,7 @@ export const CODE_GEN_TYPE_OPTIONS = Object.values(CODE_GEN_TYPE_CONFIG).map((co
 export const formatCodeGenType = (type: string | undefined): string => {
   if (!type) return '未知类型'
 
+  // @ts-ignore
   const config = CODE_GEN_TYPE_CONFIG[type as CodeGenTypeEnum]
   return config ? config.label : type
 }
